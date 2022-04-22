@@ -1,5 +1,5 @@
 ---
-title: Hugo-Reveal
+title: hugo-reveal
 type: reveal
 reveal:
   theme: robot-lung
@@ -8,8 +8,8 @@ reveal:
 
 # 📽️
 
-# Hugo-Reveal
+# hugo-reveal
 
-Beautiful presentations built with [Hugo](https://gohugo.io) and [Reveal.JS](https://revealjs.com).
+Beautiful presentations built with [Hugo](https://gohugo.io) and [Reveal.js](https://revealjs.com).
 
 Made with ❤️  by [@sagikazarmark](https://sagikazarmark.hu)
