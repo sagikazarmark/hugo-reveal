@@ -1,5 +1,7 @@
 # 📽️ hugo-reveal
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dcffee54-4d2e-4290-a0c0-353617b298bd/deploy-status)](https://app.netlify.com/sites/hugo-reveal/deploys)
+
 **Beautiful presentations built with [Hugo](https://gohugo.io) and [Reveal.js](https://revealjs.com).**
 
 This Hugo theme/module helps creating beautiful Reveal.js presentations embedded in your existing Hugo-based website.
