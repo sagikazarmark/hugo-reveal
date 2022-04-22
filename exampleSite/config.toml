@@ -1,0 +1,24 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Hugo Reveal Example Site'
+
+disableKinds = ["sitemap", "RSS"]
+theme = "."
+themesDir = "../"
+
+# uncomment for browsing at file:///
+# relativeURLs = true
+# uglyURLs = true
+
+[author]
+name = "Márk Sági-Kazár"
+
+[params.reveal]
+theme = "white"
+
+[params.reveal.presets.default]
+history = true
+progress = true
+transition = "slide"
+transition_speed = "fast"
+margin = 0.2

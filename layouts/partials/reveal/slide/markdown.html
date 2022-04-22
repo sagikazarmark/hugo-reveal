@@ -1,0 +1,7 @@
+<!-- Don't process empty content files -->
+{{- if ne (len .RawContent) 0 -}}
+<!-- TODO: make separators configurable -->
+<section data-markdown data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n--\r?\n$" data-separator-notes="^Note:">
+    {{ .RawContent }}
+</section>
+{{- end -}}

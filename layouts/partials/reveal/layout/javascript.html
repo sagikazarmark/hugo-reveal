@@ -1,0 +1,13 @@
+<script src="{{ "reveal/js/reveal.js" | absURL }}"></script>
+<script src="{{ "reveal/plugin/markdown/markdown.js" | absURL }}"></script>
+<script src="{{ "reveal/plugin/highlight/highlight.js" | absURL }}"></script>
+<script type="text/javascript">
+    Reveal.initialize({
+        {{- $preset := .Param "reveal.preset" | default "" -}}
+        {{- $options := merge (.Site.Params.reveal.options | default dict) (index (.Site.Params.reveal.presets | default dict) $preset | default dict) (.Params.reveal.options | default dict) -}}
+        {{- if $options }}
+        {{ trim (jsonify $options) "{}" | safeJS }},
+        {{- end }}
+        plugins: [ RevealMarkdown, RevealHighlight ]
+    });
+</script>

@@ -1,0 +1,31 @@
+version: '3'
+
+tasks:
+  serve:
+    cmds:
+      - hugo serve -s exampleSite
+
+  build:
+    cmds:
+      - hugo -s exampleSite --cleanDestinationDir
+
+  static:
+    cmds:
+      - mkdir -p static/reveal/{css,js,plugin}/
+      - cp node_modules/reveal.js/dist/*.css static/reveal/css/
+      - cp -r node_modules/reveal.js/dist/theme/ static/reveal/css/
+      - cp node_modules/reveal.js/dist/reveal.js* static/reveal/js/
+      - mkdir -p static/reveal/plugin/{highlight,markdown,math,notes,search,zoom}/
+      - cp node_modules/reveal.js/plugin/highlight/highlight.js static/reveal/plugin/highlight/highlight.js
+      - cp node_modules/reveal.js/plugin/markdown/markdown.js static/reveal/plugin/markdown/markdown.js
+      - cp node_modules/reveal.js/plugin/math/math.js static/reveal/plugin/math/math.js
+      - cp node_modules/reveal.js/plugin/notes/notes.js static/reveal/plugin/notes/notes.js
+      - cp node_modules/reveal.js/plugin/search/search.js static/reveal/plugin/search/search.js
+      - cp node_modules/reveal.js/plugin/zoom/zoom.js static/reveal/plugin/zoom/zoom.js
+      - wget -P static/reveal/css/theme/ https://raw.githubusercontent.com/dzello/revealjs-themes/master/css/theme/robot-lung.css
+      - wget -P static/reveal/css/theme/ https://raw.githubusercontent.com/dzello/revealjs-themes/master/css/theme/sunblind.css
+    sources:
+      - node_modules/reveal.js/dist/**
+      - node_modules/reveal.js/plugin/**
+    generates:
+      - static/reveal/**

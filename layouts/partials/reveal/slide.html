@@ -1,0 +1,6 @@
+<!-- Process slide as markdown or HTML -->
+{{- if eq (.Params.reveal.markdown | default false) true -}}
+{{- partial "reveal/slide/markdown" . -}}
+{{- else -}}
+{{- partial "reveal/slide/html" . -}}
+{{- end -}}

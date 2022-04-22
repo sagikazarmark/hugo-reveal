@@ -1,0 +1,4 @@
+{{- define "main" -}}
+{{- partial "reveal/slide" .Page -}}
+{{- partial "reveal/slides" (where .Site.RegularPages "Type" "home") -}}
+{{- end -}}

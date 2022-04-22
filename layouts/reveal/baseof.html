@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+
+<head>
+    {{ partial "reveal/layout/head" . }}
+    {{ partial "reveal/layout/style" . }}
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            {{ block "main" . }}{{ end }}
+        </div>
+
+        {{- if in (slice "robot-lung" "sunblind") (.Param "reveal.theme" | default "") -}}
+        <div class="line top"></div>
+        <div class="line bottom"></div>
+        <div class="line left"></div>
+        <div class="line right"></div>
+        {{- end -}}
+    </div>
+
+    {{ partial "reveal/layout/javascript" . }}
+</body>
+
+</html>

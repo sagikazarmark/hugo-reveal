@@ -1,0 +1,6 @@
+/.direnv/
+/.task/
+/exampleSite/.hugo_build.lock
+/exampleSite/public/
+/exampleSite/resources/
+/node_modules/

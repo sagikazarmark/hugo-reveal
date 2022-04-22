@@ -1,0 +1,17 @@
+name = "hugo-reveal"
+license = "MIT"
+licenselink = "https://github.com/sagikazarmark/hugo-reveal/blob/main/LICENSE"
+description = "Reveal.js integration for your Hugo site"
+homepage = "https://hugo-reveal.sagikazarmark.dev"
+tags = ["presentation", "revealjs"]
+features = ["presentation"]
+min_version = "0.97.3"
+
+[author]
+name = "Márk Sági-Kazár"
+homepage = "https://sagikazarmark.hu"
+
+[original]
+name = "Josh Dzielak"
+homepage = "https://dzello.com/"
+repo = "https://github.com/dzello/reveal-hugo"
