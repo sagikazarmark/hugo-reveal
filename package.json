@@ -3,6 +3,6 @@
     "version": "1.0.0",
     "description": "Beautiful presentations with Hugo and Reveal.js",
     "dependencies": {
-        "reveal.js": "^4.3.1"
+        "reveal.js": "^4.4.0"
     }
 }
